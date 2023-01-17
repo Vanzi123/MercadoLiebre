@@ -27,5 +27,5 @@ app.get("/login", (req, res) => {
   });
 
 app.listen(PORT, () => {
-  console.log("server activado");
+  console.log("server activado en puerto: "+PORT);
 });
