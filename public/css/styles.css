@@ -1,0 +1,328 @@
+/* 
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Tipografías
+Familia: 'Roboto'
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ebebeb;
+}
+section.banner img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+form{
+  text-align: left;
+}
+/* ----------------------------------header------------------------------- */
+header {
+  background-color: #eac926;
+  padding: 10px;
+  width: 100vw;
+}
+.headerlogo {
+  width: 35vw;
+  margin-right: 50px;
+}
+.search {
+  width: 35vw;
+  height: 35px;
+  background: url();
+}
+.lupa-search {
+  display: flex;
+  position: relative;
+  height: 40px;
+  top: 55px;
+}
+.lupa-search button{
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    width: 28px;
+    height: 31px;
+    background-color: white;
+    border: none;
+}
+.lupa-search input{
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 50px;
+}
+.botton-div-lupa{
+    display: block;
+    position: absolute;
+    height: 35px;
+    margin-right: 20px;
+}
+.logo-search {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-title {
+  text-align: center;
+  font-size: 12px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+li a {
+  color: black;
+  font-size: 12px;
+}
+.burgermenu {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #1259c3;
+  border-radius: 8px;
+}
+.fa-bars {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 9px;
+}
+nav  {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+nav ul li{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* ----------------------------------main------------------------------- */
+img {
+  width: 150px;
+  height: 150px;
+}
+.products{
+  min-height: 240px;
+  margin-top: 20px;
+}
+main {
+  width: 90vw;
+  text-align: center;
+  margin: auto;
+}
+
+main article{
+  margin-bottom: 10px 0px;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+}
+.artimg {
+  text-align: center;
+}
+.description {
+  border: 1px solid #ebebeb;
+  padding-top: 15px;
+  padding-left: 6px;
+  text-align: left;
+  position: relative;
+}
+.div-p {
+  display: flex;
+}
+.discount {
+  padding-left: 15px;
+  color: #39b54a;
+  font-size: 15px;
+}
+main section h3 {
+  margin-bottom: 10px;
+}
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  color: #39b54a;
+}
+.fa-truck:hover{
+  transition: 1000ms;
+  transform: rotate(-90deg);
+}
+.description-product {
+  display: none;
+}
+main section article:hover .description-product{
+  display: block;
+}
+main article:hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+/* ----------------------------------footer------------------------------- */
+.pft {
+  text-align: center;
+}
+.fa-credit-card {
+  font-size: 25px;
+  color: blue;
+}
+.fa-gift {
+  font-size: 25px;
+  color: blue;
+}
+.fa-user-shield {
+  font-size: 25px;
+  color: blue;
+}
+.divft {
+  margin: auto auto;
+  width: 30px;
+  height: 30px;
+}
+.fa-gift:hover{
+  color: black;
+}
+.fa-credit-card:hover{
+  color: black;
+}
+.fa-user-shield:hover{
+  color: black;
+}
+.pft-copyrigth{
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+/* ----------------------------------media_query------------------------------- */
+  @media (min-width: 320px) {
+    main section article {
+    margin-bottom: 20px;
+    }
+  }
+@media (min-width: 426px) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  main section article {
+    width: 40vw;
+  }
+  .burgermenu{
+    display: none;
+  }
+  .header-title{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 426px) {
+  nav{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  main section article {
+    
+    width: 20vw;
+  }
+  .headerlogo{
+    width: 30vw;
+    margin-right: 15px;
+  }
+  .lupa-search{
+    width: 30vw;
+  }
+  .header-title{
+    width: 30vw;
+    margin-left: 15px;
+    margin-top: 60px;
+  }
+  .footer-section{
+    display: flex;
+  }
+ 
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* ----------------------------------register------------------------------- */
+.body-register{
+  background-color: white;
+}
+.main-register{
+  padding-top: 15px;
+}
+.form-register{
+  padding: 10px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+.form-input{
+  border-radius: 8px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+.button-send-register:hover{
+  background-color: #0022AA;
+  color: white;
+}
+/* ----------------------------------login------------------------------- */
+.body-login{
+  background-color: #ebebeb;
+}
+.input-login{
+  text-align: center;
+  height: 30px;
+  width: 60vw;
+  border-radius: 8px;
+}
+.form-login{
+  align-items: center;
+  text-align: center;
+  width: 90vw;
+padding-top: 20px;
+}
+.input-login-button{
+  background-color: #0022AA;
+  color: white;
+  height: 30px;
+  width: 60vw;
+  border-radius: 8px;
+}
